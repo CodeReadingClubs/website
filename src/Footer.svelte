@@ -1,7 +1,7 @@
 <footer>
 	<div class="content">
 		<div>
-			<div>© 2023 Code Reading Club</div>
+			<div>© 2023 Code Reading Club CIC</div>
 			<p>Registered in England and Wales 14189139</p>
 			<address>
 				45 Preston Street
