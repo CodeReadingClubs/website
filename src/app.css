@@ -1,0 +1,164 @@
+/* Reset adapted from https://github.com/hankchizljaw/modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol,
+legend {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+fieldset,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Global defaults */
+
+@font-face {
+	font-family: 'Ubuntu Mono';
+	src: url('/fonts/UbuntuMono-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('/fonts/Barlow-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('/fonts/Barlow-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('/fonts/Barlow-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('/fonts/Barlow-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+body {
+	--teal: #29afaf;
+	--yellow: #f4d35e;
+	--orange: #ee964b;
+
+	--gray0: #f8f9fa;
+	--gray1: #f1f3f5;
+	--gray2: #e9ecef;
+	--gray3: #dee2e6;
+	--gray4: #ced4da;
+	--gray5: #adb5bd;
+	--gray6: #868e96;
+	--gray7: #495057;
+	--gray8: #343a40;
+	--gray9: #212529;
+
+	--white: #ffffff;
+	--text: #16161d;
+
+	--gutter-width: 1rem;
+
+	background-color: var(--white);
+	color: var(--text);
+	font-family: 'Barlow', sans-serif;
+	font-size: 120%;
+	color-scheme: light dark;
+}
+
+@media (min-width: 600px) {
+	body {
+		--gutter-width: 2rem;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-style: normal;
+	font-weight: bold;
+}
+
+a:focus,
+button:focus {
+	outline: 2px dashed var(--orange);
+}
