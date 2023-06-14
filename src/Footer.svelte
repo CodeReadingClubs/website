@@ -117,8 +117,9 @@
 		min-height: 100%;
 		padding: var(--gutter-width);
 		width: 100%;
-
-		@media (min-width: 700px) {
+	}
+	@media (min-width: 700px) {
+		.content {
 			flex-direction: row;
 		}
 	}
