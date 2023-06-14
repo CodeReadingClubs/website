@@ -1,6 +1,7 @@
 {
-	"name": "crc-prototypes",
+	"name": "crc-website",
 	"version": "0.0.1",
+  "homepage": "https://github.com/CodeReadingClubs/website#readme",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
