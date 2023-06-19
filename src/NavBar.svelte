@@ -28,8 +28,9 @@
 		font-size: 140%;
 		padding: 0.5rem;
 		text-decoration: none;
-
-		@media (min-width: 700px) {
+	}
+	@media (min-width: 700px) {
+		a {
 			font-size: 170%;
 		}
 	}
