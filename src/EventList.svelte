@@ -28,7 +28,7 @@
 	let events = nextThreeEvents ? dataWithoutErrors.slice(0, 3) : dataWithoutErrors;
 </script>
 
-{#if events.filter((item) => item.status !== 'completed').length > 1}
+{#if events.filter((item) => item.status !== 'completed').length >= 1}
 	<ul>
 		{#each events as event}
 			{#if event.status !== 'completed'}
