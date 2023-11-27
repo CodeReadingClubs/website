@@ -5,7 +5,7 @@
 		name: { text: string };
 		start: { local: string };
 		url: string;
-		is_online: boolean;
+		online_event: boolean;
 		status: string;
 	}
 
@@ -23,12 +23,12 @@
 	export let data: { events: Array<Event | Error> };
 	export let nextThreeEvents: boolean;
 
-	const dataWithoutErrors = data.events.filter(isEvent);
+	const validEvents = data.events.filter(isEvent).filter((item) => item.status !== 'completed');
 
-	let events = nextThreeEvents ? dataWithoutErrors.slice(0, 3) : dataWithoutErrors;
+	let events = nextThreeEvents ? validEvents.slice(0, 3) : validEvents;
 </script>
 
-{#if events.filter((item) => item.status !== 'completed').length >= 1}
+{#if events.length}
 	<ul>
 		{#each events as event}
 			{#if event.status !== 'completed'}
@@ -37,7 +37,7 @@
 						name={event.name.text}
 						date={event.start.local}
 						link={event.url}
-						online={event.is_online}
+						online={event.online_event}
 					/>
 				</li>
 			{/if}
