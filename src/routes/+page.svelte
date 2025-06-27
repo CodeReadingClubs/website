@@ -1,6 +1,7 @@
 <script>
 	import Container from '../Container.svelte';
 	import EventList from '../EventList.svelte';
+	import Newsletter from '../Newsletter.svelte';
 	import Pattern from '../Pattern.svelte';
 
 	export let data;
@@ -66,6 +67,11 @@
 					/>
 				</svg>
 			</a>
+		</div>
+
+		<div class="narrow">
+			<h2>Newsletter Signup</h2>
+			<Newsletter />
 		</div>
 	</Container>
 </Pattern>
