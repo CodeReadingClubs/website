@@ -1,7 +1,7 @@
 {
 	"name": "crc-website",
-	"version": "0.0.1",
-  "homepage": "https://github.com/CodeReadingClubs/website#readme",
+	"version": "1.0.0",
+	"homepage": "https://github.com/CodeReadingClubs/website#readme",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
@@ -29,5 +29,6 @@
 		"typescript": "5.0.4",
 		"vite": "4.3.1"
 	},
-	"type": "module"
+	"type": "module",
+	"packageManager": "yarn@4.9.2"
 }
